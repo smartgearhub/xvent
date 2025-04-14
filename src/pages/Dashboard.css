@@ -1,0 +1,72 @@
+/* === Dashboard.css (Light Theme) === */
+
+/* Overall layout */
+.dashboard {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9fc;
+  min-height: 100vh;
+  color: #1a1a1a;
+}
+
+/* Main content body */
+.dashboard-body {
+  display: flex;
+  height: calc(100vh - 70px); /* minus Topbar height */
+  overflow-y: auto;
+}
+
+/* Center Feed Area */
+.dashboard-feed {
+  flex: 1;
+  padding: 30px;
+  background-color: #f9f9fc;
+  overflow-y: auto;
+}
+
+/* Right Panel */
+.dashboard-right {
+  width: 300px;
+  padding: 30px 20px;
+  background-color: #ffffff;
+  border-left: 1px solid #e5e5e5;
+  position: sticky;
+  top: 70px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+/* Coming Soon Widget */
+.coming-soon-box {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coming-soon-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.coming-soon-box h3 {
+  font-size: 18px;
+  color: #6c4cf1;
+  margin-bottom: 10px;
+}
+
+.coming-soon-box p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Scrollbar styling (optional) */
+.dashboard-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dashboard-body::-webkit-scrollbar-thumb {
+  background: #d0d0d0;
+  border-radius: 10px;
+}

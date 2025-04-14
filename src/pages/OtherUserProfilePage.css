@@ -1,0 +1,48 @@
+.profile-page {
+    max-width: 700px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px 40px;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .profile-page h2 {
+    font-size: 28px;
+    color: #6a4caf;
+    margin-bottom: 10px;
+  }
+  
+  .profile-page p {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+  
+  .profile-info {
+    margin-top: 20px;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 20px;
+  }
+  
+  .edit-button {
+    margin-top: 25px;
+    text-align: right;
+  }
+  
+  .edit-button button {
+    background: #6a4caf;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-button button:hover {
+    background: #5a3ab2;
+  }
+  

@@ -1,0 +1,173 @@
+.topbar {
+  width: 95%;
+  height: 70px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 10px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #6c4cf1;
+  margin: 0;
+}
+
+.topbar-center {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 16px;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #6c4cf1;
+  box-shadow: 0 0 0 3px rgba(108, 76, 241, 0.1);
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  margin-right: 50px; 
+}
+
+.desktop-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.topbar-icon {
+  font-size: 26px; 
+  color: #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.topbar-icon:hover {
+  transform: scale(1.1);
+  color: #6c4cf1;
+}
+
+.profile-section {
+  position: relative;
+}
+
+.topbar-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #eee;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+
+}
+
+.topbar-avatar:hover {
+  box-shadow: 0 0 0 3px rgba(108, 76, 241, 0.2);
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.profile-dropdown button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-dropdown button:hover {
+  background-color: #f2f2f2;
+}
+
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  color: #6c4cf1;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+  min-width: 200px;
+}
+
+.mobile-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.mobile-menu-item:hover {
+  background-color: #f4f4fe;
+  color: #6c4cf1;
+}
+
+@media screen and (max-width: 768px) {
+  .topbar-center {
+    display: none;
+  }
+
+  .desktop-icons {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+}

@@ -1,0 +1,89 @@
+.organizer-section {
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.organizer-container {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.organizer-header h2 {
+  font-size: 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.organizer-header p {
+  color: #6b7280;
+  margin-bottom: 2rem;
+}
+
+.organizer-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.icon.green {
+  background-color: rgba(0, 201, 167, 0.1);
+  color: #00C9A7;
+}
+
+.organizer-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+.organizer-card p {
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.organizer-card ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.organizer-card ul li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.organizer-card ul li::before {
+  content: "✔";
+  position: absolute;
+  left: -1.25rem;
+  color: #10b981;
+}
+
+.organizer-card a {
+  color: #5E17EB;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.organizer-card a:hover {
+  text-decoration: underline;
+}

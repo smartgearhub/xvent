@@ -1,0 +1,140 @@
+/* === Feed.css (Updated for Dark Theme) === */
+.feed {
+  flex: 1;
+  padding: 30px;
+  background-color: #c7c7c7;
+}
+.feed-container{
+  background-color: #ffffff;
+  
+}
+/* Feed Card */
+.card {
+  background: #d1d1d1;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Create Post */
+.create-post textarea {
+  width: 100%;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 10px;
+  resize: none;
+  font-size: 14px;
+  font-family: inherit;
+  margin-bottom: 10px;
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+/* Action Buttons */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-btn {
+  background-color: #2a2a2a;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #3a3a3a;
+}
+
+.post-btn {
+  background-color: orange;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-btn:hover {
+  background-color: #ff9800;
+}
+
+/* Post Content */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-header h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.post-header span {
+  font-size: 12px;
+  color: #aaa;
+}
+
+.post-text {
+  font-size: 14px;
+  color: #ddd;
+  margin: 10px 0;
+}
+
+.post-img {
+  width: 100%;
+  max-height: 400px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+/* Post Footer */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 1px solid #a7a5a5;
+}
+
+.post-footer button {
+  background: none;
+  border: none;
+  color: orange;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.post-footer button:hover {
+  color: #ff9800;
+  transform: scale(1.05);
+}

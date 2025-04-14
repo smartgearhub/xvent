@@ -1,0 +1,96 @@
+/* === Updated CreatePost.css === */
+.create-post {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  margin-bottom: 24px;
+  transition: box-shadow 0.3s ease;
+}
+
+.create-post:hover {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.create-post textarea,
+.create-post input[type="text"],
+.create-post input[type="date"] {
+  width: 95%;
+  padding: 12px;
+  background-color: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  color: #333;
+  margin-bottom: 14px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+.create-post textarea{
+  max-width:95%;
+  background-color: gray;
+  
+  
+  
+}
+
+.create-post textarea:focus,
+.create-post input[type="text"]:focus,
+.create-post input[type="date"]:focus {
+  border-color: #8a2be2;
+  width: 95%;
+  outline: none;
+  background-color: #fff;
+}
+
+.create-post input[type="file"] {
+  display: none;
+}
+
+
+
+.post-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #8a2be2;
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+.option:hover {
+  color: #e94057;
+  transform: scale(1.05);
+}
+
+.option.active {
+  font-weight: bold;
+  color: #e94057;
+  background-color: #f5e8ff;
+}
+
+.create-post button {
+  background: linear-gradient(to right, #8a2be2, #e94057);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+  font-size: 15px;
+  transition: transform 0.3s ease;
+}
+
+.create-post button:hover {
+  transform: scale(1.05);
+}

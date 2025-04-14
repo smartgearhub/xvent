@@ -1,0 +1,54 @@
+.edit-profile {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    padding: 35px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .edit-profile h2 {
+    font-size: 26px;
+    color: #6a4caf;
+    margin-bottom: 20px;
+  }
+  
+  .edit-profile input,
+  .edit-profile textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+  }
+  
+  .edit-profile input:focus,
+  .edit-profile textarea:focus {
+    border-color: #6a4caf;
+    outline: none;
+  }
+  
+  .edit-profile textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .edit-profile button {
+    background: #6a4caf;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-profile button:hover {
+    background: #5a3ab2;
+  }
+  

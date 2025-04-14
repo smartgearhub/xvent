@@ -1,28 +1,36 @@
-import './App.css';
+import React from "react";
+import HomePage from "./pages/HomePage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
+import MessagesPage from "./pages/MessagesPage";
+import NotificationsPage from "./pages/NotificationsPage";
+import DiscoverEvents from "./pages/DiscoverEvents";
+import ProfilePage from "./pages/ProfilePage";
+import MyPostsPage from "./pages/MyPostsPage";
+import SettingsPage from "./pages/SettingsPage";
+import OtherUserProfilePage from './pages/OtherUserProfilePage';
+import EditProfile from './pages/EditProfile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/messages" element={<MessagesPage />} />
+        <Route path="/profile" element={<ProfilePage />} /> {/* lowercase 'profile' */}
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/settings" element={<SettingsPage />} />
+        <Route path="/myposts" element={<MyPostsPage />} />
+        <Route path="/notifications" element={<NotificationsPage />} />
+        <Route path="/discover-events" element={<DiscoverEvents />} />
+        <Route path="/profile/:userId" element={<OtherUserProfilePage />} />
+        <Route path="/editProfile/:userId" element={<EditProfile />} />
+      </Routes>
+    </Router>
   );
 }
 

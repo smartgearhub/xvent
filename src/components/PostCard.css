@@ -1,0 +1,208 @@
+/* === PostCard.css === */
+
+.post-card {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Circle for Profile Picture - displaying the first letter of the username */
+.profile-pic-letter {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #8a2be2;
+  color: #ffffff;
+  font-size: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.profile-pic-letter:hover {
+  box-shadow: 0 0 8px rgba(100, 89, 190, 0.2);
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+}
+
+.post-user-info h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #8a2be2; /* Default purple color */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect to Instagram-like gradient */
+.post-user-info h3:hover {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.post-user-info span {
+  font-size: 12px;
+  color: #777;
+}
+
+.post-content p {
+  margin: 0 0 10px;
+  line-height: 1.6;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: #6a11cb;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.post-actions button:hover {
+  background-color: #f3f0ff;
+  color: #4a00e0;
+}
+
+/* === Comment section === */
+.comment-section {
+  margin-top: 16px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 12px;
+  animation: fadeIn 0.3s ease;
+}
+
+.comment-section input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.2s;
+}
+
+.comment-section input:focus {
+  border-color: #8a2be2;
+  outline: none;
+}
+
+.comment-section button {
+  background: linear-gradient(to right, #8a2be2, #e94057);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.comment-section button:hover {
+  transform: scale(1.05);
+}
+
+.comment-list {
+  margin-top: 12px;
+}
+
+.comment {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  animation: fadeIn 0.3s ease;
+}
+
+.comment strong {
+  color: #333;
+}
+
+.comment span {
+  color: #999;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.comment p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* === Share popup === */
+.share-popup {
+  margin-top: 12px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.share-popup a {
+  background: #eee;
+  color: #6a11cb;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.share-popup a:hover {
+  background: #d0b3ff;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
