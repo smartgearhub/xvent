@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Sidebar.css';
 
 const Sidebar = ({ users, loading, setSelectedUser }) => {
   const [searchTerm, setSearchTerm] = useState('');

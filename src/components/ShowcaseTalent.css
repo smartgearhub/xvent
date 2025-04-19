@@ -87,3 +87,96 @@
 .talent-card a:hover {
   text-decoration: underline;
 }
+/* === Responsive Enhancements === */
+@media screen and (max-width: 1024px) {
+  .talent-section {
+    padding: 3rem 1rem;
+  }
+
+  .talent-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .talent-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .talent-card p,
+  .talent-card ul li {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .talent-section {
+    padding: 2.5rem 0.75rem;
+  }
+
+  .talent-container {
+    max-width: 90%;
+  }
+
+  .talent-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .talent-card {
+    padding: 1.5rem;
+  }
+
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .talent-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .talent-card p,
+  .talent-card ul li {
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .talent-section {
+    padding: 2rem 0.5rem;
+  }
+
+  .talent-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .talent-header p {
+    font-size: 0.9rem;
+  }
+
+  .talent-card {
+    padding: 1.25rem;
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+  }
+
+  .talent-card h3 {
+    font-size: 1rem;
+  }
+
+  .talent-card p,
+  .talent-card ul li {
+    font-size: 0.8rem;
+  }
+
+  .talent-card ul {
+    padding-left: 1rem;
+  }
+
+  .talent-card ul li::before {
+    left: -1rem;
+  }
+}

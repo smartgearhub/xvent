@@ -1,0 +1,96 @@
+/* === Sidebar.css === */
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100vh;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f7f7f7;
+    color: #333;
+    transition: border-color 0.2s ease;
+  }
+  
+  .search-bar:focus {
+    border-color: #8a2be2;
+    outline: none;
+  }
+  
+  .user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .user-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .user-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-item span {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .user-item span:hover {
+    color: #8a2be2;
+  }
+  
+  .loading-message, .no-users-message {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  /* === Responsive styling === */
+  @media screen and (max-width: 768px) {
+    .sidebar {
+      width: 200px;
+      padding: 12px;
+    }
+  
+    .search-bar {
+      font-size: 13px;
+    }
+  
+    .user-item {
+      font-size: 13px;
+      padding: 6px;
+    }
+  
+    .user-avatar {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  

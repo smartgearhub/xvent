@@ -1,3 +1,5 @@
+/* === Sidebar.css === */
+
 .sidebar {
   width: 180px; /* reduced from 240px */
   min-height: calc(100vh - 70px);
@@ -11,9 +13,11 @@
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 16px;
-  
+ 
+ 
 }
 
+/* Sidebar menu */
 .sidebar-menu {
   list-style: none;
   padding: 0;
@@ -32,17 +36,21 @@
   transition: background 0.2s ease, color 0.2s ease;
 }
 
+/* Sidebar menu item hover effect */
 .sidebar-menu li:hover {
   background-color: #f4f4fe;
   color: #6c4cf1;
 }
 
+/* Icon size in sidebar */
 .sidebar-menu .icon {
   margin-right: 8px;
-  font-size: 14px; /* slightly smaller icon */
+  font-size: 10px; /* slightly smaller icon */
 }
+
+/* === Mobile Responsiveness === */
 @media (max-width: 768px) {
   .sidebar {
-    display: none;
+    display: none; /* Hide sidebar on mobile */
   }
 }

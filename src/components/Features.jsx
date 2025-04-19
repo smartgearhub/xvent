@@ -1,7 +1,8 @@
 import React from 'react';
 import './Features.css';
-
+import { useNavigate } from 'react-router-dom';
 const Features = () => {
+  const navigate = useNavigate();
   return (
     <section id="features" className="features-section">
       <div className="features-container">
@@ -111,8 +112,8 @@ const Features = () => {
             <p>Join thousands of users already connecting through Xvent.</p>
           </div>
           <div className="cta-buttons">
-            <a href="#">Create Account</a>
-            <a href="#" className="transparent">Learn More</a>
+            <a onClick={() => navigate('/signup')}>Create Account</a>
+            <a onClick={() => navigate('/signup')} className="transparent">Learn More</a>
           </div>
         </div>
       </div>

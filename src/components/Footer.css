@@ -101,3 +101,89 @@
   color: #ffffff;
 }
 
+/* === Responsiveness === */
+@media (max-width: 1200px) {
+  .footer-container {
+    gap: 1.5rem;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.85rem;
+  }
+
+  .footer-column h4 {
+    font-size: 1rem;
+  }
+
+  .footer-column ul li a {
+    font-size: 0.8rem;
+  }
+
+  .social-icons a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-logo {
+    font-size: 1.25rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.8rem;
+  }
+
+  .footer-column h4 {
+    font-size: 0.95rem;
+  }
+
+  .footer-column ul li a {
+    font-size: 0.75rem;
+  }
+
+  .social-icons a {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 3rem 1rem 1.5rem;
+  }
+
+  .footer-logo {
+    font-size: 1.25rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.75rem;
+  }
+
+  .footer-column h4 {
+    font-size: 0.875rem;
+  }
+
+  .footer-column ul li a {
+    font-size: 0.7rem;
+  }
+
+  .social-icons a {
+    font-size: 0.8rem;
+  }
+
+  .footer-bottom {
+    padding-top: 1rem;
+  }
+}

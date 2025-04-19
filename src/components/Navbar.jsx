@@ -31,7 +31,7 @@ const Navbar = () => {
           <a href="#features" onClick={(e) => handleScrollTo(e, 'features')}>Features</a>
           <a href="#event-discovery" onClick={(e) => handleScrollTo(e, 'event-discovery')}>Discover Events</a>
           <a href="#talent-showcase" onClick={(e) => handleScrollTo(e, 'talent-showcase')}>Showcase Talent</a>
-          <a href="#organizer-tools" onClick={(e) => handleScrollTo(e, 'organizer-tools')}>For Organizers</a>
+          
           <a href="#how-it-works" onClick={(e) => handleScrollTo(e, 'how-it-works')}>How It Works</a>
           <button className="signup-btn" onClick={() => navigate('/signup')}>Sign Up</button>
         </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <a href="#features" onClick={(e) => handleScrollTo(e, 'features')}>Features</a>
             <a href="#event-discovery" onClick={(e) => handleScrollTo(e, 'event-discovery')}>Discover Events</a>
             <a href="#talent-showcase" onClick={(e) => handleScrollTo(e, 'talent-showcase')}>Showcase Talent</a>
-            <a href="#organizer-tools" onClick={(e) => handleScrollTo(e, 'organizer-tools')}>For Organizers</a>
+          
             <a href="#how-it-works" onClick={(e) => handleScrollTo(e, 'how-it-works')}>How It Works</a>
             <button className="signup-btn mobile" onClick={() => navigate('/signup')}>Sign Up</button>
           </div>

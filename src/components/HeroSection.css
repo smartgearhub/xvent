@@ -183,3 +183,33 @@
 .stat-label {
   font-size: 0.875rem;
 }
+/* Make sure hero text scales on small screens */
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+  }
+
+  .hero {
+    padding: 4rem 1rem 2rem;
+  }
+
+  .event-card {
+    bottom: -1rem;
+    right: -0.5rem;
+    width: 220px;
+    padding: 0.75rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-box {
+    flex-basis: 100%;
+  }
+}

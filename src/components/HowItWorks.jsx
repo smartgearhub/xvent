@@ -118,23 +118,6 @@ const HowItWorks = () => {
           Hear from event organizers, talents, and attendees who've transformed their experience with Xvent.
         </p>
 
-        {/* Main Large Review Card */}
-        <div className="main-review card hover-effect">
-          <img src="https://via.placeholder.com/192" alt="user" className="main-avatar" />
-          <div className="main-review-content">
-            <p className="quote">❝</p>
-            <p className="highlight">
-              “As a festival director organizing multiple events each year, Xvent has been a game-changer. Their platform streamlined our ticketing process and increased our attendance by 35% in just one season.”
-            </p>
-            <p className="details">
-              After struggling with fragmented tools and platforms, Michael discovered Xvent and now manages all his festival operations in one place, reaching a larger audience than ever before.
-            </p>
-            <div className="reviewer-info">
-              <strong>Michael Rodriguez</strong>
-              <span>Festival Director</span>
-            </div>
-          </div>
-        </div>
 
         {/* Three Small Review Cards */}
         <div className="review-grid">
@@ -164,6 +147,18 @@ const HowItWorks = () => {
             </div>
           </div>
 
+          <div className="card small-review hover-effect">
+            <img src="https://via.placeholder.com/64" alt="Priya" className="avatar" />
+            <div>
+              <strong>Priya Sharma</strong>
+              <p className="role">Small Business Owner</p>
+              <p className="stars">★★★★★</p>
+              <p className="text">
+                "Our workshop attendance doubled after we started using Xvent. The platform’s promotion tools and targeted reach helped us connect with people genuinely interested in our offerings."
+              </p>
+              <p className="joined">Using Xvent since January 2023</p>
+            </div>
+          </div>
           <div className="card small-review hover-effect">
             <img src="https://via.placeholder.com/64" alt="Priya" className="avatar" />
             <div>

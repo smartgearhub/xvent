@@ -1,7 +1,8 @@
 import React from 'react';
 import './HeroSection.css';
-
+import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
+  const navigate = useNavigate();
   return (
     <section id="hero" className="hero">
       <div className="hero-container">
@@ -13,7 +14,7 @@ const HeroSection = () => {
           </p>
           <div className="hero-buttons">
             <a href="#event-discovery" className="btn-discover">Discover Events</a>
-            <a href="#event-discovery" className="btn-post">Post an Event</a>
+            <a onClick={() => navigate('/signup')} className="btn-post">Post an Event</a>
           </div>
         </div>
         <div className="hero-right">

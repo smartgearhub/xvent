@@ -52,7 +52,7 @@ const handleLogout = () => {
   return (
     <header className="topbar">
       <div className="topbar-left">
-        <h1 className="logo">Xvent</h1>
+        <h1 className="logo" onClick={() => handleNavigation('/Dashboard')} >Xvent</h1>
       </div>
 
       <SearchBar />

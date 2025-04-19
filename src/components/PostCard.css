@@ -56,7 +56,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-
 .post-user-info span {
   font-size: 12px;
   color: #777;
@@ -77,10 +76,12 @@
 
 .post-actions {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Align buttons horizontally */
   margin-top: 16px;
   border-top: 1px solid #eee;
   padding-top: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .post-actions button {
@@ -112,7 +113,7 @@
 }
 
 .comment-section input {
-  width: 100%;
+  
   padding: 10px;
   margin-bottom: 8px;
   border-radius: 8px;
@@ -173,7 +174,8 @@
   margin-top: 12px;
   display: flex;
   gap: 12px;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure wrapping when the screen is small */
 }
 
 .share-popup a {
@@ -204,5 +206,46 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* === Responsive styles === */
+@media screen and (max-width: 768px) {
+  .post-card {
+    padding: 12px;
+  }
+
+  .profile-pic-letter {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .post-user-info h3 {
+    font-size: 14px;
+  }
+
+  .post-content p {
+    font-size: 14px;
+  }
+
+  .post-actions {
+    justify-content: space-evenly; /* Space evenly in smaller screens */
+  }
+
+  .post-actions button {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  
+
+  .share-popup {
+    gap: 8px;
+  }
+
+  .share-popup a {
+    padding: 8px;
+    font-size: 14px;
   }
 }
